@@ -22,7 +22,7 @@ export function main(coord, context, cursor, buffer) {
 	const c = (floor(coord.x * 0.5) + floor(coord.y * .5)) % 2
 	return {
 		char : pattern[c][i % pattern[c].length],
-		color : 'rgba(0,0,0,0.1)', //col[c],
+		color : 'rgba(255,255,255,0.3)', //col[c],
 		// backgroundColor : col[(c+1)%2],
 		fontWeight : weights[c],
 	}
